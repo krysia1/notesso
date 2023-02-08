@@ -10,6 +10,6 @@
         android:scaleType="fitXY"
         android:layout_marginTop="180dp"
         android:layout_marginStart="57dp"
-        android:src="@drawable/bubbles_text"
+        android:src="@drawable/splash_image"
         android:contentDescription="@string/logo" />
 </RelativeLayout>

@@ -6,7 +6,7 @@ const MainPage = () => {
     <SafeAreaView>
       <ScrollView>
         <View>
-          <Text>Hello! it's Notesso App!</Text>
+          <Text style={{color: 'white'}}>Hello! it's Notesso App!</Text>
         </View>
       </ScrollView>
     </SafeAreaView>

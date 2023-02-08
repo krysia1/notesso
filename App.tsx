@@ -9,6 +9,7 @@
 import React, {useEffect} from 'react';
 // import {SafeAreaView, ScrollView, Text, View} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+import {StatusBar, View} from 'react-native';
 import MainPage from './MainPage';
 
 const App = () => {
@@ -18,7 +19,10 @@ const App = () => {
 
   return (
     // <NavigationContainer>
-    <MainPage />
+    <View style={{backgroundColor: '#190520'}}>
+      <StatusBar backgroundColor="#190520" barStyle="light-content" />
+      <MainPage />
+    </View>
     // </NavigationContainer>
   );
 };
