@@ -1,28 +1,20 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 // import {NavigationContainer} from '@react-navigation/native';
 import React, {useEffect} from 'react';
-// import {SafeAreaView, ScrollView, Text, View} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import {StatusBar, View} from 'react-native';
-import MainPage from './MainPage';
+import MainPage from './pages/MainPage';
+import {NativeBaseProvider} from 'native-base';
+import {theme} from './config/theme';
 
 const App = () => {
   useEffect(() => {
-    SplashScreen.hide(); //hides the splash screen on app load.
+    SplashScreen.hide();
   }, []);
 
   return (
     // <NavigationContainer>
-    <View style={{backgroundColor: '#190520'}}>
-      <StatusBar backgroundColor="#190520" barStyle="light-content" />
+    <NativeBaseProvider theme={theme}>
       <MainPage />
-    </View>
+    </NativeBaseProvider>
     // </NavigationContainer>
   );
 };
