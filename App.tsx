@@ -5,19 +5,22 @@
  * @format
  */
 
-import React from 'react';
-import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+// import {NavigationContainer} from '@react-navigation/native';
+import React, {useEffect} from 'react';
+// import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
+import MainPage from './MainPage';
 
-function App(): JSX.Element {
+const App = () => {
+  useEffect(() => {
+    SplashScreen.hide(); //hides the splash screen on app load.
+  }, []);
+
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View>
-          <Text>Hello! it's Notesso App!</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    // <NavigationContainer>
+    <MainPage />
+    // </NavigationContainer>
   );
-}
+};
 
 export default App;
