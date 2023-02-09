@@ -1,7 +1,8 @@
 import {
+  HStack,
   MoonIcon,
   Pressable,
-  Row,
+  StatusBar,
   SunIcon,
   Text,
   useColorMode,
@@ -14,28 +15,40 @@ const Header = () => {
   const theme = useTheme();
   const {toggleColorMode} = useColorMode();
 
+  const statusBarColorMode = useColorModeValue('dark-content', 'light-content');
+  const StatusBarBackgroundColor = useColorModeValue(
+    theme.colors.primary['50'],
+    theme.colors.primary['500'],
+  );
+
   const icon = useColorModeValue(
     <MoonIcon color={theme.colors.primary['400']} size="6" />,
     <SunIcon color={theme.colors.primary['50']} size="6" />,
   );
 
   return (
-    <Row
-      width="100%"
-      pl="3"
-      pr="5"
-      alignItems="center"
-      justifyContent="space-between">
-      <Text
-        _light={{color: theme.colors.primary['500']}}
-        _dark={{color: theme.colors.secondary['500']}}
-        fontFamily="Codystar"
-        fontWeight={400}
-        fontSize={theme.fontSizes['4xl']}>
-        Notesso
-      </Text>
-      <Pressable onPress={toggleColorMode}>{icon}</Pressable>
-    </Row>
+    <>
+      <StatusBar
+        backgroundColor={StatusBarBackgroundColor}
+        barStyle={statusBarColorMode}
+      />
+      <HStack
+        width="100%"
+        pl="3"
+        pr="5"
+        alignItems="center"
+        justifyContent="space-between">
+        <Text
+          _light={{color: theme.colors.primary['500']}}
+          _dark={{color: theme.colors.secondary['500']}}
+          fontFamily="Codystar"
+          fontWeight={400}
+          fontSize={theme.fontSizes['4xl']}>
+          Notesso
+        </Text>
+        <Pressable onPress={toggleColorMode}>{icon}</Pressable>
+      </HStack>
+    </>
   );
 };
 
