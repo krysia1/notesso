@@ -11,7 +11,7 @@ import {
 } from 'native-base';
 import React from 'react';
 
-const Header = () => {
+export const Header = () => {
   const theme = useTheme();
   const {toggleColorMode} = useColorMode();
 
@@ -22,7 +22,7 @@ const Header = () => {
   );
 
   const icon = useColorModeValue(
-    <MoonIcon color={theme.colors.primary['400']} size="6" />,
+    <MoonIcon color={theme.colors.primary['500']} size="6" />,
     <SunIcon color={theme.colors.primary['50']} size="6" />,
   );
 
@@ -33,6 +33,7 @@ const Header = () => {
         barStyle={statusBarColorMode}
       />
       <HStack
+        safeAreaTop
         width="100%"
         pl="3"
         pr="5"
@@ -51,5 +52,3 @@ const Header = () => {
     </>
   );
 };
-
-export default Header;

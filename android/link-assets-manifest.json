@@ -10,6 +10,10 @@
       "sha1": "a58d65985382317f5ccf15787c69271470caa64b"
     },
     {
+      "path": "assets/fonts/Source Sans Pro.ttf",
+      "sha1": "48d6928e08ba5e2ca1e15d754c146580b1c8febd"
+    },
+    {
       "path": "assets/fonts/SourceSansPro-Black.ttf",
       "sha1": "9f5e9f9165668260c574dcd07db63d6b90b98824"
     },
@@ -44,10 +48,6 @@
     {
       "path": "assets/fonts/SourceSansPro-LightItalic.ttf",
       "sha1": "c27caccb61ee5253eb83cb46ad5f3ebb4703d6a2"
-    },
-    {
-      "path": "assets/fonts/SourceSansPro-Regular.ttf",
-      "sha1": "48d6928e08ba5e2ca1e15d754c146580b1c8febd"
     },
     {
       "path": "assets/fonts/SourceSansPro-SemiBold.ttf",

@@ -1,7 +1,6 @@
-import {View, useTheme} from 'native-base';
+import {View, useTheme, Box} from 'native-base';
 import React from 'react';
-import {SafeAreaView} from 'react-native';
-import Header from '../components/Header';
+import {Header, Footer} from '../components';
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -11,9 +10,10 @@ const Dashboard = () => {
       flex={1}
       _light={{bg: theme.colors.primary['50']}}
       _dark={{bg: theme.colors.primary['500']}}>
-      <SafeAreaView>
+      <Box h="100%" justifyContent="space-between">
         <Header />
-      </SafeAreaView>
+        <Footer />
+      </Box>
     </View>
   );
 };
