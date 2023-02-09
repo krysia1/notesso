@@ -1,9 +1,9 @@
 // import {NavigationContainer} from '@react-navigation/native';
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
-import MainPage from './pages/MainPage';
+import Dashboard from './src/views/Dashboard';
 import {NativeBaseProvider} from 'native-base';
-import {theme} from './config/theme';
+import {theme} from './src/config/theme';
 
 const App = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const App = () => {
   return (
     // <NavigationContainer>
     <NativeBaseProvider theme={theme}>
-      <MainPage />
+      <Dashboard />
     </NativeBaseProvider>
     // </NavigationContainer>
   );
