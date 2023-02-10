@@ -6,7 +6,7 @@ export const Footer = () => {
 
   return (
     <Box
-      _light={{bg: theme.colors.primary['100']}}
+      _light={{bg: theme.colors.secondary['100']}}
       _dark={{bg: theme.colors.primary['400']}}>
       <HStack
         safeAreaBottom
@@ -27,14 +27,14 @@ export const Footer = () => {
         </Text>
         <Pressable
           rounded="3xl"
-          _light={{bg: theme.colors.primary['400']}}
+          _light={{bg: theme.colors.primary['50']}}
           _dark={{bg: theme.colors.secondary['500']}}
           p="2"
           onPress={() => {
             console.log('yoooo');
           }}>
           <AddIcon
-            _light={{color: theme.colors.secondary['500']}}
+            _light={{color: theme.colors.primary['500']}}
             _dark={{color: theme.colors.primary['400']}}
           />
         </Pressable>

@@ -6,7 +6,9 @@ export const Card = () => {
 
   return (
     <Box
-      bg={theme.colors.primary['400']}
+      _light={{bg: theme.colors.secondary['50']}}
+      _dark={{bg: theme.colors.primary['400']}}
+      // bg={theme.colors.primary['400']}
       width="100%"
       p="2"
       height="20"

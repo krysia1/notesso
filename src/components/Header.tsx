@@ -17,7 +17,7 @@ export const Header = () => {
 
   const statusBarColorMode = useColorModeValue('dark-content', 'light-content');
   const StatusBarBackgroundColor = useColorModeValue(
-    theme.colors.primary['50'],
+    theme.colors.secondary['50'],
     theme.colors.primary['500'],
   );
 
