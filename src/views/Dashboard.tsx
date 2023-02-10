@@ -1,8 +1,8 @@
 import {View, useTheme, Box} from 'native-base';
 import React from 'react';
-import {Header, Footer} from '../components';
+import {Header, Footer, NotesList} from '../components';
 
-const Dashboard = () => {
+export const Dashboard = () => {
   const theme = useTheme();
 
   return (
@@ -12,10 +12,9 @@ const Dashboard = () => {
       _dark={{bg: theme.colors.primary['500']}}>
       <Box h="100%" justifyContent="space-between">
         <Header />
+        <NotesList />
         <Footer />
       </Box>
     </View>
   );
 };
-
-export default Dashboard;

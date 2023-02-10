@@ -15,6 +15,7 @@
 		33F28519726F4C09BBBB0063 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C06B138694481A427583E /* SourceSansPro-ExtraLight.ttf */; };
 		3FD062F24F154F0293AF6F12 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E66366220E574DF6B47F6E99 /* SourceSansPro-Italic.ttf */; };
 		4670623C11C34F88B9246532 /* Codystar.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0A2DEC62FA941D99B9ACEB6 /* Codystar.ttf */; };
+		58B78F8F9DDC4881B8002F7E /* Source Sans Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDEDEA1379F4246AE15B981 /* Source Sans Pro.ttf */; };
 		63C6521D2FB943C680741CFC /* SourceSansPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C04EA552EE1C40C39FE2F500 /* SourceSansPro-BlackItalic.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Notesso-NotessoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Notesso-NotessoTests.a */; };
 		7E45EF0BC2674074A7B0F4D1 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 452557E2EE374FF4AB5CE405 /* SourceSansPro-Bold.ttf */; };
@@ -27,7 +28,6 @@
 		D4A5CC12F4AC4B00808CF1CF /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25231D67E4934E6DACFA6617 /* SourceSansPro-SemiBold.ttf */; };
 		D904F17ED5374CE1BCCFDF59 /* SourceSansPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57F95216F2144376ACFE9F1E /* SourceSansPro-BoldItalic.ttf */; };
 		E31416845DE34C7584212369 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB2E960F345B88C7DCE9A /* SourceSansPro-Light.ttf */; };
-		58B78F8F9DDC4881B8002F7E /* Source Sans Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CDEDEA1379F4246AE15B981 /* Source Sans Pro.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +60,7 @@
 		5709B34CF0A7D63546082F79 /* Pods-Notesso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notesso.release.xcconfig"; path = "Target Support Files/Pods-Notesso/Pods-Notesso.release.xcconfig"; sourceTree = "<group>"; };
 		57F95216F2144376ACFE9F1E /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-BoldItalic.ttf"; path = "../assets/fonts/SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Notesso-NotessoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notesso-NotessoTests.debug.xcconfig"; path = "Target Support Files/Pods-Notesso-NotessoTests/Pods-Notesso-NotessoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CDEDEA1379F4246AE15B981 /* Source Sans Pro.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Source Sans Pro.ttf"; path = "../assets/fonts/Source Sans Pro.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Notesso.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Notesso.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6828B5E44A8240A2998B3156 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-Black.ttf"; path = "../assets/fonts/SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Notesso/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		D9E9EE9BF8D748B987057EB4 /* SourceSansPro-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-LightItalic.ttf"; path = "../assets/fonts/SourceSansPro-LightItalic.ttf"; sourceTree = "<group>"; };
 		E66366220E574DF6B47F6E99 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SourceSansPro-Italic.ttf"; path = "../assets/fonts/SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		5CDEDEA1379F4246AE15B981 /* Source Sans Pro.ttf */ = {isa = PBXFileReference; name = "Source Sans Pro.ttf"; path = "../assets/fonts/Source Sans Pro.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
