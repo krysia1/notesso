@@ -6,7 +6,7 @@ export const Footer = () => {
 
   return (
     <Box
-      _light={{bg: theme.colors.secondary['100']}}
+      _light={{bg: theme.colors.secondary['200']}}
       _dark={{bg: theme.colors.primary['400']}}>
       <HStack
         safeAreaBottom

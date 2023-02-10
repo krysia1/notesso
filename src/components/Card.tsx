@@ -6,8 +6,8 @@ export const Card = () => {
 
   return (
     <Box
-      _light={{bg: theme.colors.secondary['50']}}
-      _dark={{bg: theme.colors.primary['400']}}
+      _light={{bg: theme.colors.secondary['100']}}
+      _dark={{bg: theme.colors.primary['300']}}
       // bg={theme.colors.primary['400']}
       width="100%"
       p="2"
@@ -16,7 +16,9 @@ export const Card = () => {
       rounded="lg"
       justifyContent="center">
       <Text
-        color={theme.colors.secondary['500']}
+        // color={theme.colors.secondary['500']}
+        _light={{color: theme.colors.primary['400']}}
+        _dark={{color: theme.colors.secondary['500']}}
         fontFamily="Source Sans Pro"
         fontSize={theme.fontSizes['3xl']}>
         Eloo
