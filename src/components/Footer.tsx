@@ -1,7 +1,8 @@
-import {AddIcon, Box, HStack, Pressable, Text, useTheme} from 'native-base';
+import {AddIcon, Box, HStack, Text, useTheme} from 'native-base';
 import React from 'react';
 import {useNavigate} from 'react-router-native';
 import {RoutingPath} from '../router/routes-paths';
+import {CircleBtn} from './Button';
 
 export const Footer = () => {
   const theme = useTheme();
@@ -30,17 +31,15 @@ export const Footer = () => {
           fontSize={theme.fontSizes.xl}>
           $3 Notes
         </Text>
-        <Pressable
-          rounded="3xl"
-          _light={{bg: theme.colors.primary['50']}}
-          _dark={{bg: theme.colors.secondary['500']}}
-          p="2"
-          onPress={() => navigate(RoutingPath.noteDetails)}>
-          <AddIcon
-            _light={{color: theme.colors.primary['500']}}
-            _dark={{color: theme.colors.primary['400']}}
-          />
-        </Pressable>
+        <CircleBtn
+          onPress={() => navigate(RoutingPath.noteDetails)}
+          icon={
+            <AddIcon
+              _light={{color: theme.colors.primary['500']}}
+              _dark={{color: theme.colors.primary['400']}}
+            />
+          }
+        />
       </HStack>
     </Box>
   );

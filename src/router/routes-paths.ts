@@ -1,6 +1,10 @@
+export enum RoutingPathEnum {
+  Dashboard = 'dashboard',
+  NoteDetails = 'noteDetails',
+}
 export const RoutingPath = {
-  dashboard: '/',
-  noteDetails: '/note-details',
+  [RoutingPathEnum.Dashboard]: '/',
+  [RoutingPathEnum.NoteDetails]: '/note-details',
 } as const;
 
 export type RoutingPath = (typeof RoutingPath)[keyof typeof RoutingPath];

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
 import {NativeBaseProvider} from 'native-base';
-import {theme} from './src/config/theme';
+import {theme} from './src/config';
 import {NativeRouter, Route, Routes} from 'react-router-native';
 import {routing} from './src/router/routes-config';
 import {ViewWrapper} from './src/components';

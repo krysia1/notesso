@@ -1,41 +1,25 @@
-import {
-  Box,
-  ChevronLeftIcon,
-  HStack,
-  Pressable,
-  // ScrollView,
-  Text,
-  TextArea,
-  useTheme,
-} from 'native-base';
+import {Box, ChevronLeftIcon, TextArea, useTheme} from 'native-base';
 import React from 'react';
 import {useNavigate} from 'react-router-native';
+import {TextBtn} from '../components/Button';
 import {RoutingPath} from '../router/routes-paths';
 
 export const NoteDetails = () => {
   const theme = useTheme();
   const navigate = useNavigate();
+
   return (
     <Box flex={1} pt="5">
-      <Pressable
-        maxW={90}
-        p="2"
-        onPress={() => navigate(RoutingPath.dashboard)}>
-        <HStack alignItems="center">
+      <TextBtn
+        onPress={() => navigate(RoutingPath.dashboard)}
+        icon={
           <ChevronLeftIcon
             _light={{color: theme.colors.primary['400']}}
             _dark={{color: theme.colors.secondary['500']}}
           />
-          <Text
-            _light={{color: theme.colors.primary['400']}}
-            _dark={{color: theme.colors.secondary['500']}}
-            fontFamily="Source Sans Pro"
-            fontWeight={400}
-            fontSize={theme.fontSizes.xl}>
-            Notes
-          </Text>
-        </HStack>
-      </Pressable>
+        }
+        text={'Notes'}
+      />
       {/* <ScrollView pt="2" safeAreaBottom> */}
       <Box flex={1} px="3" safeAreaBottom>
         <TextArea
