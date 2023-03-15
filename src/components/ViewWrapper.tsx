@@ -11,8 +11,8 @@ export const ViewWrapper = ({child}: IViewWrapper) => {
   return (
     <View
       flex={1}
-      _light={{bg: theme.colors.secondary['50']}}
-      _dark={{bg: theme.colors.primary['500']}}>
+      _light={{bg: theme.colors.light['50']}}
+      _dark={{bg: theme.colors.dark['50']}}>
       <Box h="100%" justifyContent="space-between">
         <Header />
         {child}

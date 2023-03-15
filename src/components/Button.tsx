@@ -9,8 +9,8 @@ export const TextBtn = ({onPress, icon, text}: IBtn) => {
       <HStack alignItems="center">
         {icon}
         <Text
-          _light={{color: theme.colors.primary['400']}}
-          _dark={{color: theme.colors.secondary['500']}}
+          _light={{color: theme.colors.light['200']}}
+          _dark={{color: theme.colors.dark['200']}}
           fontFamily="Source Sans Pro"
           fontWeight={400}
           fontSize={theme.fontSizes.xl}>
@@ -26,8 +26,8 @@ export const CircleBtn = ({onPress, icon}: IBtn) => {
   return (
     <Pressable
       rounded="3xl"
-      _light={{bg: theme.colors.primary['50']}}
-      _dark={{bg: theme.colors.secondary['500']}}
+      _light={{bg: theme.colors.light['200']}}
+      _dark={{bg: theme.colors.dark['200']}}
       p="2"
       onPress={onPress}>
       {icon}

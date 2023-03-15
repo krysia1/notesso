@@ -14,8 +14,8 @@ export const NoteDetails = () => {
         onPress={() => navigate(RoutingPath.dashboard)}
         icon={
           <ChevronLeftIcon
-            _light={{color: theme.colors.primary['400']}}
-            _dark={{color: theme.colors.secondary['500']}}
+            _light={{color: theme.colors.light['200']}}
+            _dark={{color: theme.colors.dark['200']}}
           />
         }
         text={'Notes'}

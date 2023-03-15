@@ -17,13 +17,13 @@ export const Header = () => {
 
   const statusBarColorMode = useColorModeValue('dark-content', 'light-content');
   const StatusBarBackgroundColor = useColorModeValue(
-    theme.colors.secondary['50'],
-    theme.colors.primary['500'],
+    theme.colors.light['50'],
+    theme.colors.dark['50'],
   );
 
   const icon = useColorModeValue(
-    <MoonIcon color={theme.colors.primary['500']} size="6" />,
-    <SunIcon color={theme.colors.primary['50']} size="6" />,
+    <MoonIcon color={theme.colors.light['300']} size="6" />,
+    <SunIcon color={theme.colors.dark['300']} size="6" />,
   );
 
   return (
@@ -40,8 +40,8 @@ export const Header = () => {
         alignItems="center"
         justifyContent="space-between">
         <Text
-          _light={{color: theme.colors.primary['500']}}
-          _dark={{color: theme.colors.secondary['500']}}
+          _light={{color: theme.colors.light['200']}}
+          _dark={{color: theme.colors.dark['200']}}
           fontFamily="Codystar"
           fontWeight={400}
           fontSize={theme.fontSizes['4xl']}>

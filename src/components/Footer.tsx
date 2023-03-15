@@ -12,8 +12,8 @@ export const Footer = () => {
 
   return (
     <Box
-      _light={{bg: theme.colors.secondary['200']}}
-      _dark={{bg: theme.colors.primary['400']}}>
+      _light={{bg: theme.colors.light['100']}}
+      _dark={{bg: theme.colors.dark['100']}}>
       <HStack
         safeAreaBottom
         py="2"
@@ -24,8 +24,8 @@ export const Footer = () => {
         <Box />
         <Text
           ml="7"
-          _light={{color: theme.colors.primary['900']}}
-          _dark={{color: theme.colors.primary['50']}}
+          _light={{color: theme.colors.light['300']}}
+          _dark={{color: theme.colors.dark['300']}}
           fontFamily="Source Sans Pro"
           fontWeight={400}
           fontSize={theme.fontSizes.xl}>
@@ -35,8 +35,8 @@ export const Footer = () => {
           onPress={() => navigate(RoutingPath.noteDetails)}
           icon={
             <AddIcon
-              _light={{color: theme.colors.primary['500']}}
-              _dark={{color: theme.colors.primary['400']}}
+              _light={{color: theme.colors.light['100']}}
+              _dark={{color: theme.colors.dark['100']}}
             />
           }
         />

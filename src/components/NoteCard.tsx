@@ -8,8 +8,8 @@ export const NoteCard = ({data}: INoteCard) => {
 
   return (
     <Box
-      _light={{bg: theme.colors.secondary['100']}}
-      _dark={{bg: theme.colors.primary['300']}}
+      _light={{bg: theme.colors.light['100']}}
+      _dark={{bg: theme.colors.dark['100']}}
       p="2"
       height="20"
       my="2"
