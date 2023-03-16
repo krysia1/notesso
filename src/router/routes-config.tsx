@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dashboard, NoteDetails} from '../views';
+import {Dashboard, NewNote} from '../views';
 import {RoutingPath} from './routes-paths';
 
 interface IRouting {
@@ -13,7 +13,7 @@ export const routing: IRouting[] = [
     view: <Dashboard />,
   },
   {
-    path: RoutingPath.noteDetails,
-    view: <NoteDetails />,
+    path: RoutingPath.newNote,
+    view: <NewNote />,
   },
 ];

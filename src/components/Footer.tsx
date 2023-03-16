@@ -32,7 +32,7 @@ export const Footer = () => {
           $3 Notes
         </Text>
         <CircleBtn
-          onPress={() => navigate(RoutingPath.noteDetails)}
+          onPress={() => navigate(RoutingPath.newNote)}
           icon={
             <AddIcon
               _light={{color: theme.colors.light['100']}}

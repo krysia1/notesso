@@ -1,7 +1,7 @@
 import {Box, useTheme} from 'native-base';
 import React from 'react';
 import {INoteCard} from '../utils/interfaces';
-import {NoteContent} from './NoteContent';
+import {NoteCardContent} from './NoteCardContent';
 
 export const NoteCard = ({data}: INoteCard) => {
   const theme = useTheme();
@@ -10,12 +10,12 @@ export const NoteCard = ({data}: INoteCard) => {
     <Box
       _light={{bg: theme.colors.light['100']}}
       _dark={{bg: theme.colors.dark['100']}}
-      p="2"
+      px="3"
       height="20"
       my="2"
       rounded="2xl"
       justifyContent="center">
-      <NoteContent title={data.title} note={data.note} />
+      <NoteCardContent title={data.title} note={data.note} />
     </Box>
   );
 };

@@ -11,6 +11,7 @@ export const TextBtn = ({onPress, icon, text}: IBtn) => {
         <Text
           _light={{color: theme.colors.light['200']}}
           _dark={{color: theme.colors.dark['200']}}
+          px="1"
           fontFamily="Source Sans Pro"
           fontWeight={400}
           fontSize={theme.fontSizes.xl}>
