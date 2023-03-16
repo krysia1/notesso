@@ -1,12 +1,12 @@
 import {AddIcon, Box, HStack, Text, useTheme} from 'native-base';
 import React from 'react';
-import {useNavigate} from 'react-router-native';
-import {RoutingPath} from '../router/routes-paths';
+import {ParamListBase, useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {CircleBtn} from './Button';
 
 export const Footer = () => {
   const theme = useTheme();
-  const navigate = useNavigate();
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
   //TODO: add react-native-blur to blur the Footer and leave the NoteList scroll behind it
 
@@ -32,7 +32,7 @@ export const Footer = () => {
           $3 Notes
         </Text>
         <CircleBtn
-          onPress={() => navigate(RoutingPath.newNote)}
+          onPress={() => navigation.navigate('NewNote')}
           icon={
             <AddIcon
               _light={{color: theme.colors.light['100']}}
