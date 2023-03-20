@@ -23,8 +23,8 @@ export const NoteCardContent = ({
         _dark={{color: theme.colors.dark['400']}}
         fontFamily="Source Sans Pro"
         fontSize={theme.fontSizes.lg}>
-        {note.slice(0, 42)}
-        {note.length > 42 ? '...' : ''}
+        {note.slice(0, 40)}
+        {note.length > 40 ? '...' : ''}
       </Text>
     </Box>
   );
