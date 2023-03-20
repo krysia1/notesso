@@ -6,12 +6,18 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {TextBtn} from '../components/Button';
 import {firebase} from '../config';
 
-export const NoteDetails = ({route}) => {
+export const NoteDetails = ({route}: any) => {
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const theme = useTheme();
 
   const [title, setTitle] = useState(route.params.item.title);
   const [note, setNote] = useState(route.params.item.note);
+
+  //TODO: add saving on navigating back to Dashboard
+  //TODO: add deleting if note is empty
+  //TODO: add proper animation to move between screens
+  //TODO: refactor details and newNote to use generic components/funcs
+  //TODO: change number of notes to be dynamic not hardcoded
 
   const handleUpdate = () => {
     firebase
@@ -27,6 +33,21 @@ export const NoteDetails = ({route}) => {
         Alert.alert(error);
       });
   };
+
+  // const handleDelete = () => {
+  //   firebase
+  //     .firestore()
+  //     .collection('notes')
+  //     .doc(route.params.item.id)
+  //     .delete()
+  //     .then(() => {
+  //       Keyboard.dismiss();
+  //       navigation.navigate('Dashboard');
+  //     })
+  //     .catch(error => {
+  //       Alert.alert(error);
+  //     });
+  // };
 
   return (
     <Box flex={1} pt="5">

@@ -25,9 +25,11 @@ export const NotesList = () => {
   }, []);
 
   return (
-    <Box flex={1} p="5">
+    <Box p="5">
       <FlatList
         data={notes}
+        keyExtractor={item => item.id}
+        contentContainerStyle={{paddingBottom: 60}}
         renderItem={({item}) => (
           <Pressable onPress={() => navigation.navigate('NoteDetails', {item})}>
             <NoteCard data={item} />
